@@ -4,6 +4,8 @@ using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
+using System.Threading;
 
 namespace Oculus_Virtual_Tragedy___Launcher
 {
@@ -11,9 +13,6 @@ namespace Oculus_Virtual_Tragedy___Launcher
     {
         static void Main(String[] args)
         {
-            // config ig
-            Console.Title = "Yeah!";
-
             // variables
             bool IsDemo = true;
             bool IsDevBuild = true;
@@ -21,6 +20,9 @@ namespace Oculus_Virtual_Tragedy___Launcher
             string BuildNumString = "Demo";
             string Build = $"{BuildNum} ({BuildNumString})";
             string BuildDetail = $"IsDevBuild = {IsDevBuild}. IsDemo = {IsDemo}";
+            string Title = "Oculus Virtual Tragedy Launcher";
+            string InAppTitle = "OVT Launcher";
+            bool PressedKey = false;
 
             // logos
             string Logo1 = @"
@@ -33,12 +35,35 @@ namespace Oculus_Virtual_Tragedy___Launcher
                                                                                       __/ |            __/ |
                                                                                      |___/            |___/ ";
 
+            // config ig
+            Console.Title = $"{Title} - Welcome!";
+
             // starting the program
             Console.WriteLine($"{Logo1}");
-            Console.WriteLine("=====================================================================");
+            Console.WriteLine("=============================================================================================================");
             Console.WriteLine($"{Build}");
             Console.WriteLine($"{BuildDetail}");
-            Console.WriteLine("Yeah, this is the end of demo. more soon!");
+            Console.WriteLine($"Press any key to the {InAppTitle} download demo");
+            Console.ReadKey(PressedKey);
+            if (PressedKey == true);
+            {
+                Console.Clear();
+                Console.Title = $"{InAppTitle} - Downloading...";
+                Console.WriteLine("Starting Download...");
+                Thread.Sleep(3000);
+                Console.WriteLine("Download: 50%");
+                Thread.Sleep(5000);
+                Console.WriteLine("Download: 75%");
+                Thread.Sleep(2500);
+                Console.WriteLine("Download Done!");
+                Console.WriteLine("(this has just been a demo. no game has been downloaded.)");
+                Console.WriteLine("Press any key to exit");
+                Console.ReadKey();
+                // exit code 1 im gonna try make mean
+                // it exited due to a good reason, like
+                // closing after downloading (like here)
+                Environment.Exit(1);
+            }
         }
     }
 }
