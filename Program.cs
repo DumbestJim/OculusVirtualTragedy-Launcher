@@ -11,6 +11,9 @@ namespace Oculus_Virtual_Tragedy___Launcher
     {
         static void Main(String[] args)
         {
+            // config ig
+            Console.Title = "Yeah!";
+
             // variables
             bool IsDemo = true;
             bool IsDevBuild = true;
@@ -32,10 +35,10 @@ namespace Oculus_Virtual_Tragedy___Launcher
 
             // starting the program
             Console.WriteLine($"{Logo1}");
-            Console.WriteLine("===============================");
+            Console.WriteLine("=====================================================================");
             Console.WriteLine($"{Build}");
             Console.WriteLine($"{BuildDetail}");
-            Console.WriteLine("Yeah, this is the end of demo. more soon!")
+            Console.WriteLine("Yeah, this is the end of demo. more soon!");
         }
     }
 }
