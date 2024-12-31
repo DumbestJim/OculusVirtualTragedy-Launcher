@@ -35,6 +35,7 @@ namespace Oculus_Virtual_Tragedy___Launcher
             Console.WriteLine("===============================");
             Console.WriteLine($"{Build}");
             Console.WriteLine($"{BuildDetail}");
+            Console.WriteLine("Yeah, this is the end of demo. more soon!")
         }
     }
 }
