@@ -1,3 +1,2 @@
 # Oculus Virtual Tragedy - Launcher
-
-test
+uh yuh, launcher, dont fuck shit up, check COMMIT.md
