@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
@@ -36,7 +36,7 @@ namespace Oculus_Virtual_Tragedy___Launcher
                                                                                      |___/            |___/ ";
 
             // config ig
-            Console.Title = $"{Title} - Welcome!";
+            Console.Title = $"{InAppTitle} - Welcome!";
 
             // starting the program
             Console.WriteLine($"{Logo1}");
