@@ -22,7 +22,9 @@ namespace Oculus_Virtual_Tragedy___Launcher
             string BuildDetail = $"IsDevBuild = {IsDevBuild}. IsDemo = {IsDemo}";
             string Title = "Oculus Virtual Tragedy Launcher";
             string InAppTitle = "OVT Launcher";
-            bool PressedKey = false;
+            bool PressedKey = false
+            //ignore these pls, for testing
+            string DownloadURL = ""
 
             // logos
             string Logo1 = @"
@@ -43,26 +45,14 @@ namespace Oculus_Virtual_Tragedy___Launcher
             Console.WriteLine("=============================================================================================================");
             Console.WriteLine($"{Build}");
             Console.WriteLine($"{BuildDetail}");
-            Console.WriteLine($"Press any key to the {InAppTitle} download demo");
+            Console.WriteLine($"Press any key to download Oulus Virtual Tragedy");
             Console.ReadKey(PressedKey);
             if (PressedKey == true);
             {
-                Console.Clear();
-                Console.Title = $"{InAppTitle} - Downloading...";
-                Console.WriteLine("Starting Download...");
-                Thread.Sleep(3000);
-                Console.WriteLine("Download: 50%");
-                Thread.Sleep(5000);
-                Console.WriteLine("Download: 75%");
-                Thread.Sleep(2500);
-                Console.WriteLine("Download Done!");
-                Console.WriteLine("(this has just been a demo. no game has been downloaded.)");
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
-                // exit code 1 im gonna try make mean
-                // it exited due to a good reason, like
-                // closing after downloading (like here)
-                Environment.Exit(1);
+                if (DownloadURL == "");
+            {
+                Console.WriteLine("Error! Download URL is invalid!")
+            }
             }
         }
     }
