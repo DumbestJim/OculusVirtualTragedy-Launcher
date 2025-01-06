@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("The Official Launcher for Oculus Virtual Tragedy")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("OVT Team")]
-[assembly: AssemblyProduct("Oculus Virtual Tragedy - Launcher")]
+[assembly: AssemblyProduct("Launcher")]
 [assembly: AssemblyCopyright("Copyright ©OVT Team  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
